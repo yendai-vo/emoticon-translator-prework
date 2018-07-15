@@ -5,8 +5,8 @@ def load_library(path)
   emoticons = YAML.load_file(path)
   translationLibrary = {"get_meaning" => {}, "get_emoticon" => {}}
   emoticons.each do |attribute, emotes|
-    translationLibrary["get_meaning"][emote[0]] = attribute
-    translationLibrary["get_emoticon"][emote[0]] = emote[1]
+    translationLibrary["get_meaning"][emotes[0]] = attribute
+    translationLibrary["get_emoticon"][emotes[0]] = emotes[1]
   end
 
   translationLibrary
