@@ -24,5 +24,5 @@ def get_english_meaning(path, jap)
 
   meaning = lib["get_meaning"][jap]
 
-  meaing ? meaing : "Sorry, that emoticon was not found"
+  meaning ? meaning : "Sorry, that emoticon was not found"
 end
